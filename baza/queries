@@ -1,0 +1,28 @@
+INSERT INTO `destinacija` (`id`, `grad`) VALUES ('5', 'Subotica');
+
+SELECT
+	dst.grad,
+	v.svrha,
+	v.pocetna_km,
+	v.id,
+	k.ime,
+	k.prezime,
+	vz.registarski_broj
+
+	
+FROM
+    voznja v
+LEFT JOIN
+    vozilo vz
+ON
+    v.vozilo_id = vz.id
+LEFT JOIN
+    destinacija dst
+ON
+    v.destinacija_id = dst.id
+LEFT JOIN
+    korisnik k
+ON
+    v.korisnik_id = k.id
+WHERE
+    v.zavrsna_km IS NULL AND k.korisnicko_ime = 12;

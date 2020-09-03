@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane hgap="10.0" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="339.0" prefWidth="529.0" vgap="10.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="evidencija.controller.PocetnaController">
+  <columnConstraints>
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="170.0" minWidth="170.0" prefWidth="170.0" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="170.0" minWidth="170.0" prefWidth="170.0" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="170.0" minWidth="170.0" prefWidth="170.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints maxHeight="80.0" minHeight="80.0" prefHeight="80.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="80.0" minHeight="80.0" prefHeight="80.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="80.0" minHeight="80.0" prefHeight="80.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="80.0" minHeight="80.0" prefHeight="80.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <Group />
+      <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#ZatvoriVoznju" prefHeight="49.0" prefWidth="116.0" text="Zatvaranje vožnje" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+      <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#Vozilo" prefHeight="49.0" prefWidth="116.0" text="Vozila" textAlignment="CENTER" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+      <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#OtvoriVoznju" prefHeight="49.0" prefWidth="116.0" text="Otvaranje vožnje" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnSpan="3" GridPane.rowIndex="2">
+         <children>
+            <Button alignment="CENTER" contentDisplay="CENTER" layoutX="115.0" layoutY="16.0" mnemonicParsing="false" onAction="#Korisnici" prefHeight="49.0" prefWidth="116.0" text="Korisnici" textAlignment="CENTER" />
+            <Button alignment="CENTER" contentDisplay="CENTER" layoutX="304.0" layoutY="18.0" mnemonicParsing="false" onAction="#ListaVoznji" prefHeight="49.0" prefWidth="116.0" text="Pregled vožnji" textAlignment="CENTER" wrapText="true" />
+         </children>
+      </AnchorPane>
+   </children>
+</GridPane>

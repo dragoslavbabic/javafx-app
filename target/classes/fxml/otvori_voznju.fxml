@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="683.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="evidencija.controller.OtvoriVoznjuController">
+  <columnConstraints>
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="316.0" minWidth="10.0" prefWidth="175.0" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="368.0" minWidth="10.0" prefWidth="344.0" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="178.0" minWidth="10.0" prefWidth="167.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints maxHeight="40.0" minHeight="40.0" prefHeight="40.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="580.0" minHeight="580.0" prefHeight="580.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="70.0" minHeight="70.0" prefHeight="70.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnSpan="3">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="140.0" layoutY="14.0" prefHeight="43.0" prefWidth="421.0" text="Otvaranje nove stavke" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="23.0" />
+               </font></Label>
+         </children>
+      </AnchorPane>
+      <GridPane GridPane.columnIndex="1" GridPane.rowIndex="1">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="200.0" minWidth="10.0" prefWidth="180.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="190.0" minWidth="10.0" prefWidth="179.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints maxHeight="30.0" minHeight="30.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="50.0" minHeight="50.0" prefHeight="50.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="30.0" minHeight="30.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="50.0" minHeight="50.0" prefHeight="50.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="30.0" minHeight="30.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="50.0" minHeight="50.0" prefHeight="50.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="30.0" minHeight="30.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="50.0" minHeight="50.0" prefHeight="50.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <ComboBox fx:id="cbIzaberiVozilo" maxHeight="40.0" minHeight="40.0" prefHeight="40.0" prefWidth="367.0" promptText="Izaberi vozilo" GridPane.columnSpan="2" GridPane.rowIndex="1" />
+            <ComboBox fx:id="cbDestinacija" maxHeight="40.0" minHeight="40.0" prefHeight="40.0" prefWidth="367.0" promptText="Destinacija" GridPane.rowIndex="3" />
+            <ComboBox fx:id="cbSvrhaVoznje" maxHeight="40.0" minHeight="40.0" prefHeight="40.0" prefWidth="367.0" promptText="Svrha voznje" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <ComboBox fx:id="cbStanjeVozila" maxHeight="40.0" minHeight="40.0" prefHeight="40.0" prefWidth="367.0" promptText="Stanje vozila" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <TextArea fx:id="taNapomena" prefHeight="142.0" prefWidth="363.0" promptText="Napomena:" GridPane.columnSpan="2" GridPane.rowIndex="8">
+               <padding>
+                  <Insets top="20.0" />
+               </padding>
+               <GridPane.margin>
+                  <Insets top="20.0" />
+               </GridPane.margin></TextArea>
+            <Label text="VOZILO" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.valignment="BOTTOM" />
+            <Label text="Destinacija" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="BOTTOM" />
+            <Label text="Svrha vožnje" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="BOTTOM" />
+            <Label text="Početno stanje - KM" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="BOTTOM" />
+            <TextField fx:id="tfPocetnoStanjeKM" maxHeight="40.0" minHeight="40.0" prefHeight="40.0" prefWidth="182.0" promptText="Pocetno stanje - km" GridPane.rowIndex="5" />
+            <Label text="Stanje vozila" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="BOTTOM" />
+            <Label text="Datum početka vožnje" GridPane.halignment="CENTER" GridPane.rowIndex="6" GridPane.valignment="BOTTOM" />
+            <TextField fx:id="tfDatumPocetka" maxHeight="40.0" minHeight="40.0" prefHeight="40.0" prefWidth="183.0" promptText="Datum pocetka voznje" GridPane.rowIndex="7" />
+            <TextField fx:id="tfKorisnik" editable="false" maxHeight="40.0" minHeight="40.0" prefHeight="40.0" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+            <Label text="Korisnik" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="6" GridPane.valignment="BOTTOM" />
+         </children>
+      </GridPane>
+      <Button fx:id="btnPocetna" maxHeight="40.0" minHeight="40.0" mnemonicParsing="false" onAction="#promeniNaPocetnuStranu" prefHeight="40.0" prefWidth="141.0" text="Pocetna" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
+      <Button fx:id="bntOsvezi" maxHeight="40.0" minHeight="40.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="66.0" text="Osvezi" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
+      <Button fx:id="btnKreirajVoznju" maxHeight="40.0" maxWidth="180.0" minHeight="40.0" mnemonicParsing="false" onAction="#saveVoznja" prefHeight="40.0" prefWidth="180.0" text="KreiraJ voznju!" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
+   </children>
+</GridPane>
