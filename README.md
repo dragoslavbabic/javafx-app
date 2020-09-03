@@ -2,7 +2,7 @@
 
 ## Opis
 
-Za izradu projekta korišćene su sledeći programski jezici i alati:
+Za izradu projekta korišćeni su sledeći programski jezici i alati:
 
  - JAVA 11
  - JavaFX
